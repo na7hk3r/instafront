@@ -16,6 +16,7 @@ nav{
     background-color: $bg-primary;
     display: flex;
     justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     h2{
         font-family: $font-h2;
         font-size: 1.7em;
@@ -37,7 +38,6 @@ nav{
 main{
     display: grid;
     grid-column-gap: 15px;
-    grid-row-gap: 15px;
     grid-template-columns: 1fr .5fr;
     grid-template-rows: repeat(4, 1fr);
     .stories {
@@ -45,7 +45,7 @@ main{
         display: flex;
         align-items: flex-start;
         justify-content: center;
-        margin: 40px;
+        margin: 40px 40px 0 40px;
         .story-container {
             align-items: center;
             background-color: $bg-primary;
@@ -54,11 +54,16 @@ main{
             flex-wrap: nowrap;
             justify-content: space-between;
             padding: 10px;
-            width: 50%;
+            width: 54%;
         }
     }
     .feed {
+        align-items: center;
+        display: flex;
         grid-area: 2 / 1 / 5 / 2;
+        justify-content: center;
+        margin-top: -30rem;
+        z-index: -1;
         .card{
             align-items: center;
             background-color: $bg-primary;
@@ -101,4 +106,13 @@ main{
             }
         }
     }
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: $color-primary;
+    color: $bg-primary;
 }
