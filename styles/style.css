@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Roboto:wght@400;500;700&display=swap");
 body {
+  background-color: #fafafa;
+  box-sizing: border-box;
+  color: #000;
+  font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
-  color: #000;
-  background-color: #fafafa;
 }
 
 nav {
@@ -36,9 +36,19 @@ nav input::placeholder {
 
 main {
   display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr 0.5fr;
+  grid-template-rows: repeat(4, 1fr);
 }
-
-.story-container {
+main .stories {
+  grid-area: 1/1/2/2;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 40px;
+}
+main .stories .story-container {
   align-items: center;
   background-color: #fff;
   border: #222222 solid 0.5px;
@@ -46,5 +56,47 @@ main {
   flex-wrap: nowrap;
   justify-content: space-between;
   padding: 10px;
-  width: 30%;
+  width: 50%;
+}
+main .feed {
+  grid-area: 2/1/5/2;
+}
+main .feed .card {
+  align-items: center;
+  background-color: #fff;
+  border: #222222 solid 0.5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 10px;
+  width: 50%;
+}
+main .feed .card .card-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+main .feed .card .card-header .points {
+  position: relative;
+  left: 24rem;
+}
+main .suggested {
+  grid-area: 1/2/2/3;
+}
+main .suggested .change {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+main .suggested .sugerencias .perfil {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
 }/*# sourceMappingURL=style.css.map */

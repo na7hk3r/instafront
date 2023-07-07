@@ -3,12 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Roboto:wght@400;500;700&display=swap');
 
 body{
+    background-color: $bg-secondary;
+    box-sizing: border-box;
+    color: $color-primary;
+    font-family: $font-body;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: $font-body;
-    color: $color-primary;
-    background-color: $bg-secondary;
 }
 
 nav{
@@ -36,15 +36,69 @@ nav{
 
 main{
     display: grid;
-}
-
-.story-container{
-    align-items: center;
-    background-color: $bg-primary;
-    border: #222222 solid .5px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    padding: 10px;
-    width: 30%;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    grid-template-columns: 1fr .5fr;
+    grid-template-rows: repeat(4, 1fr);
+    .stories {
+        grid-area: 1 / 1 / 2 / 2;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 40px;
+        .story-container {
+            align-items: center;
+            background-color: $bg-primary;
+            border: #222222 solid .5px;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            padding: 10px;
+            width: 50%;
+        }
+    }
+    .feed {
+        grid-area: 2 / 1 / 5 / 2;
+        .card{
+            align-items: center;
+            background-color: $bg-primary;
+            border: #222222 solid .5px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            padding: 10px;
+            width: 50%;
+            .card-header{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 10px;
+                width: 100%;
+                .points{
+                    position: relative;
+                    left: 24rem;
+                }
+            }
+        }
+    }
+    .suggested { 
+        grid-area: 1 / 2 / 2 / 3;
+        .change{
+            display: flex;
+            padding: 10px;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+        }
+        .sugerencias {
+            .perfil {
+                display: flex;
+                padding: 10px;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 10px;
+            }
+        }
+    }
 }
