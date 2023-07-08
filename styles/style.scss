@@ -82,7 +82,11 @@ main{
                 width: 100%;
                 .points{
                     position: relative;
-                    left: 24rem;
+                    left: 14rem;
+                }
+            }
+            .foto-feed{
+                    width: 100%;
                 }
             }
             .comments{
@@ -149,7 +153,6 @@ main{
                 }
             }
         }
-    }
 
 footer{
     display: flex;

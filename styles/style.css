@@ -86,24 +86,28 @@ main .feed .card .card-header {
 }
 main .feed .card .card-header .points {
   position: relative;
-  left: 24rem;
+  left: 14rem;
 }
-main .feed .card .comments span {
+main .feed .card .foto-feed {
+  width: 100%;
+}
+main .feed .comments span {
   color: #A49B9B;
 }
-main .feed .card .comments span:first-child {
+main .feed .comments span:first-child {
   color: #000;
   font-weight: bold;
 }
-main .feed .card .icons img {
+main .feed .icons img {
   margin-left: 10px;
   margin-top: 5px;
   cursor: pointer;
 }
-main .suggested {
+
+.suggested {
   grid-area: 1/2/2/3;
 }
-main .suggested .change {
+.suggested .change {
   display: flex;
   padding: 10px;
   align-items: center;
@@ -111,21 +115,21 @@ main .suggested .change {
   gap: 10px;
   margin-top: 20px;
 }
-main .suggested .change .name span {
+.suggested .change .name span {
   color: #000;
   font-weight: bold;
 }
-main .suggested .change .name p {
+.suggested .change .name p {
   margin: 0;
 }
-main .suggested .change .name .blue {
+.suggested .change .name .blue {
   color: #1CA0F6;
   font-weight: bold;
   position: relative;
   left: 14rem;
   top: 2rem;
 }
-main .suggested .sugerencias .perfil {
+.suggested .sugerencias .perfil {
   display: flex;
   padding: 10px;
   align-items: center;
@@ -133,12 +137,12 @@ main .suggested .sugerencias .perfil {
   gap: 10px;
   font-weight: bold;
 }
-main .suggested .sugerencias .perfil .blue {
+.suggested .sugerencias .perfil .blue {
   color: #1CA0F6;
   position: relative;
   left: 5rem;
 }
-main .suggested .sugerencias .perfil .blue.blue2 {
+.suggested .sugerencias .perfil .blue.blue2 {
   left: 6rem;
 }
 
