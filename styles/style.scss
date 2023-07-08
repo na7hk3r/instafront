@@ -25,7 +25,7 @@ nav{
     input{
         background-color: $bg-secondary;
         border-radius: 5px;
-        border: #222222 solid .5px;
+        border: solid 0.5px gray;
         height: 2.5rem;
         padding: 20px;
         width: 20%;
@@ -49,7 +49,7 @@ main{
         .story-container {
             align-items: center;
             background-color: $bg-primary;
-            border: #222222 solid .5px;
+            border: solid 0.5px gray;
             display: flex;
             flex-wrap: nowrap;
             justify-content: space-between;
@@ -67,7 +67,7 @@ main{
         .card{
             align-items: center;
             background-color: $bg-primary;
-            border: #222222 solid .5px;
+            border: solid 0.5px gray;
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
@@ -85,6 +85,22 @@ main{
                     left: 24rem;
                 }
             }
+            .comments{
+                span{
+                    color: $color-secondary;
+                &:first-child{
+                    color: $color-primary;
+                    font-weight: bold;
+                }
+            }
+            }
+            .icons{
+                img{
+                    margin-left: 10px;
+                    margin-top: 5px;
+                    cursor: pointer;
+                }
+            }
         }
     }
     .suggested { 
@@ -95,6 +111,24 @@ main{
             align-items: center;
             justify-content: flex-start;
             gap: 10px;
+            margin-top: 20px;
+            .name{
+                span{
+                    color: $color-primary;
+                    font-weight: bold;
+                    
+                }
+                p{
+                    margin: 0;
+                }
+                .blue{
+                    color: $color-link;
+                    font-weight: bold;
+                    position: relative;
+                    left: 14rem;
+                    top: 2rem;
+                }
+            }
         }
         .sugerencias {
             .perfil {
@@ -103,10 +137,19 @@ main{
                 align-items: center;
                 justify-content: flex-start;
                 gap: 10px;
+                font-weight: bold;
+                .blue{
+                    color: $color-link;
+                    position: relative;
+                    left: 5rem;
+                    &.blue2{
+                        left: 6rem;
+                    }
+                    }
+                }
             }
         }
     }
-}
 
 footer{
     display: flex;

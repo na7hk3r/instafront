@@ -23,7 +23,7 @@ nav h2 {
 nav input {
   background-color: #fafafa;
   border-radius: 5px;
-  border: #222222 solid 0.5px;
+  border: solid 0.5px gray;
   height: 2.5rem;
   padding: 20px;
   width: 20%;
@@ -51,7 +51,7 @@ main .stories {
 main .stories .story-container {
   align-items: center;
   background-color: #fff;
-  border: #222222 solid 0.5px;
+  border: solid 0.5px gray;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -69,7 +69,7 @@ main .feed {
 main .feed .card {
   align-items: center;
   background-color: #fff;
-  border: #222222 solid 0.5px;
+  border: solid 0.5px gray;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -88,6 +88,18 @@ main .feed .card .card-header .points {
   position: relative;
   left: 24rem;
 }
+main .feed .card .comments span {
+  color: #A49B9B;
+}
+main .feed .card .comments span:first-child {
+  color: #000;
+  font-weight: bold;
+}
+main .feed .card .icons img {
+  margin-left: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+}
 main .suggested {
   grid-area: 1/2/2/3;
 }
@@ -97,6 +109,21 @@ main .suggested .change {
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
+  margin-top: 20px;
+}
+main .suggested .change .name span {
+  color: #000;
+  font-weight: bold;
+}
+main .suggested .change .name p {
+  margin: 0;
+}
+main .suggested .change .name .blue {
+  color: #1CA0F6;
+  font-weight: bold;
+  position: relative;
+  left: 14rem;
+  top: 2rem;
 }
 main .suggested .sugerencias .perfil {
   display: flex;
@@ -104,6 +131,15 @@ main .suggested .sugerencias .perfil {
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
+  font-weight: bold;
+}
+main .suggested .sugerencias .perfil .blue {
+  color: #1CA0F6;
+  position: relative;
+  left: 5rem;
+}
+main .suggested .sugerencias .perfil .blue.blue2 {
+  left: 6rem;
 }
 
 footer {
