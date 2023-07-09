@@ -153,4 +153,50 @@ footer {
   width: 100%;
   background-color: #000;
   color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+  .suggested,
+  .s1,
+  .s2,
+  .s3,
+  input {
+    display: none;
+  }
+  nav {
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+  main {
+    grid-template-columns: 1fr;
+  }
+  main .feed {
+    z-index: 0;
+    margin-top: 0;
+  }
+  main .feed .card {
+    width: 20rem;
+  }
+  main .feed .card .card-header {
+    padding: 0 0 10px 0;
+  }
+  main .feed .card .card-header .points {
+    position: relative;
+    left: 5rem;
+  }
+  main .stories {
+    margin: 40px 0;
+  }
+  main .stories .story-container {
+    width: 20rem;
+    justify-content: space-around;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  footer p {
+    font-size: 50%;
+  }
 }/*# sourceMappingURL=style.css.map */
